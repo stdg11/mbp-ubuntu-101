@@ -5,4 +5,5 @@ MacBook Pro 10,1 Ubuntu Installation/Configuration
 
  * Keyboard Brightness 0 on startup
  * Colemak on startup
-
+ * Confirm Shutdown on power button
+ * Keyboard Bindings

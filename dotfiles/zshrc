@@ -87,5 +87,7 @@ xbindkeys
 
 alias zshconfig="vim ~/.zshrc"
 alias colemak="setxkbmap us -variant colemak"
-alias qwerty="setkbmap gb"
+alias qwerty="setxkbmap gb"
 alias la="ls -la"
+alias kboff="sudo echo 0 > /sys/devices/platform/applesmc.768/leds/smc::kbd_backlight/brightness"
+alias kbon="sudo echo 100 > /sys/devices/platform/applesmc.768/leds/smc::kbd_backlight/brightness"
