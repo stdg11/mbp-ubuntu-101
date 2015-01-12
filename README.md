@@ -7,3 +7,4 @@ MacBook Pro 10,1 Ubuntu Installation/Configuration
  * Colemak on startup
  * Confirm Shutdown on power button
  * Keyboard Bindings
+ * ReFiNd Boot screen retina

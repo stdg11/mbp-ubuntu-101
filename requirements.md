@@ -9,3 +9,6 @@
  * vim
  * flashplugin-installer
  * Thunderbird
+ * dmenu2 - (https://bitbucket.org/melek/dmenu2)
+ * libxft-dev
+ * libx11-dev
