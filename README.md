@@ -1,17 +1,20 @@
-# mpb-ubuntu-101
-MacBook Pro 10,1 Ubuntu Installation/Configuration
+#MacBook Pro 10,1 Ubuntu Installation/Configuration
 
 ## To Do
 
- * Keyboard Brightness 0 on startup
- * ~~Colemak on startup~~
- * Confirm Shutdown on power button
- * ~~kEyboard Bindings~~
- * ReFiNd Boot screen retina
- * Audio Mute
- * auto script
+ - [x] Install Wireless drivers
+ - [x] Keyboard Backlight
+ - [x] Set keyboard layout on startup
+ - [ ] Keyboard brightness 0 on startup
+ - [ ] Confirm Shutdown on power button
+ - [ ] Apple keyboard bindings
+ - [ ] Refind + Boot screen retina
+ - [ ] Audio Mute
+ - [ ] Auto install script
+ - [ ] Make things pretty
+ - [ ] zsh
 
-# Install Broadcom Wireless Drivers
+## Install Broadcom Wireless Drivers
 
 Once Ubuntu is installed you will have no network connections.
 To install the wireless drivers located in drivers/:
@@ -24,28 +27,31 @@ To install the wireless drivers located in drivers/:
 
     dkpg -i bcmwl-kernel-source_6.30.223.141+bdcom-0ubuntu2_amd64.deb
 
-For the latest drivers see: [http://packages.ubuntu.com/]
+For the latest drivers see: http://packages.ubuntu.com/
 
-# Confirm shutdown on Power Button
+## Confirm Shutdown on Power Button
 
 # Keyboard Backlight
 
 Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro-keyboard-backlight-keys-on-ubuntu-gnulinux/)
 
- * Copy `scripts/kb` to `/usr/bin`
- * Don't forget too `sudo chmod +x /usr/bin/kb`
- *
+ 1. Copy `scripts/kb` to `/usr/bin`
+ 2. Don't forget too `sudo chmod +x /usr/bin/kb`
+ 
 
-# Wallpaper
+## Wallpaper
 
- * Install [FEH](http://feh.finalrewind.org/)
+ 1. Install [FEH](http://feh.finalrewind.org/)
+    
     sudo apt-get install feh 
- * Run feh on startup to set the Wallpaper
+ 
+2. Run feh on startup to set the Wallpaper
+    
     vim ~/.i3/config
     exec --no-startup-id feh --bg-scale '/home/user/Pictures/wallpaper/cubes-2560x1600.jpg'
 exec_always ~/.scripts/kb-off.sh 
 
-# Installed Packages
+## Installed Packages
 
  * zsh
  * i3
