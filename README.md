@@ -55,12 +55,9 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
     
     `sudo apt-get install feh` 
  
-2. Run feh on startup to set the Wallpaper
+2. Edit your `~/.i3/config` and add the following to start feh on startup
     
-    ```
-    vim ~/.i3/config
-    exec --no-startup-id feh --bg-scale '/home/user/Pictures/wallpaper/cubes-2560x1600.jpg'
-    ```
+    `exec --no-startup-id feh --bg-scale '/home/user/Pictures/wallpaper/cubes-2560x1600.jpg'`
 
 ## Installed Packages
 
