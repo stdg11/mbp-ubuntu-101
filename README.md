@@ -2,8 +2,8 @@
 
 ## To Do
 
- - [ ] Keyboard brightness 0 on startup
- - [ ] Confirm Shutdown on power button
+ - [x] ~~Keyboard brightness 0 on startup~~
+ - [x] ~~Confirm Shutdown on power button~~
  - [ ] Apple keyboard bindings
  - [ ] Refind + Boot screen retina
  - [ ] Audio Mute
