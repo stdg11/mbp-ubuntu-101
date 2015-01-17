@@ -77,12 +77,34 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
     
     `sudo apt-get install feh` 
  
-2. Edit your `~/.i3/config` and add the following to start feh on startup
+ 2. Edit your `~/.i3/config` and add the following to start feh on startup
     
     `exec --no-startup-id feh --bg-scale '/home/user/Pictures/wallpaper/cubes-2560x1600.jpg'`
 
+## Lock Screen
+
+ Credit to Pato [Lankenau](http://plankenau.com/blog/post/gaussian-blur-lock-screen-i3lock/)
+
+ 1. Install required packages
+
+    `sudo apt-get install i3lock scrot imagemagick xautolock`
+
+ 2. Copy `scripts/lock` to `usr/bin/lock`
+
+ 3. Make it executable
+
+    `sudo chmod +x /usr/bin/lock`
+
+ 4. To enable autolock add the following to `~/.i3/config`
+
+    `exec_always xautolock -time 10 -locker lock`
+
 ## Installed Packages
 
+ * i3lock
+ * scrot
+ * imagemagick
+ * xautolock
  * zsh
  * i3
  * setxkbmap

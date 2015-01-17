@@ -146,14 +146,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym XF86KbdBrightnessDown exec "sudo /opt/kb-brightness down"
-bindsym XF86KbdBrightnessUp exec "sudo /opt/kb-brightness up"
-bindsym XF86MonBrightnessDown exec "sudo /opt/bl-brightness down"
-bindsym XF86MonBrightnessUp exec "sudo /opt/bl-brightness up"
+# keyboard brightness
+bindsym XF86KbdBrightnessDown exec "sudo kb down"
+bindsym XF86KbdBrightnessUp exec "sudo kb up"
+
+#screen brightness
+bindsym XF86MonBrightnessDown exec "sudo bl down" 
+bindsym XF86MonBrightnessUp exec "sudo bl up"
+
 
 bar {
-	position top
-        status_command i3status
+	position bottom
+        #status_command i3status
 	colors {
 		statusline #AAAAAA
 		background #333333
@@ -161,3 +165,14 @@ bar {
 		inactive_workspace #484848 #484848 #AAAAAA
 	}
 }
+
+bar {
+	position top
+        status_command i3status
+	tray_output none
+	workspace_buttons no
+}
+
+exec --no-startup-id feh --bg-scale '/home/warad337/Pictures/wallpaper/cubes-2560x1600.jpg'
+exec_always sudo kb off
+ 
