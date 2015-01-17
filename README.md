@@ -10,9 +10,9 @@
  - [ ] Auto install script
  - [ ] Make things pretty
  - [ ] zsh
- - [x] Install Wireless drivers
- - [x] Keyboard Backlight
- - [x] Set keyboard layout on startup
+ - [x] ~~Install Wireless drivers~~
+ - [x] ~~Keyboard Backlight~~
+ - [x] ~~Set keyboard layout on startup~~
 
 ## Install Broadcom Wireless Drivers
 
