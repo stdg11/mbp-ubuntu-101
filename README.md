@@ -4,7 +4,7 @@
 
  - [x] ~~Keyboard brightness 0 on startup~~
  - [x] ~~Confirm Shutdown on power button~~
- - [ ] Apple keyboard bindings
+ - [x] ~~Apple keyboard bindings~~
  - [ ] Refind + Boot screen retina
  - [ ] Audio Mute
  - [ ] Auto install script
@@ -78,12 +78,31 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
     # keyboard brightness
     bindsym XF86KbdBrightnessDown exec "sudo kb down"
     bindsym XF86KbdBrightnessUp exec "sudo kb up"
-
     ```
 
  5. To turn your backlight off on startup, add the following to your `~/.i3/config`
 
     `exec_always sudo kb off `
+
+## Sceen Brightness
+
+ 1. Copy`scripts/bl` to `/usr/bin`
+ 2. Don't forget to make it executable
+
+    `sudo chmod +x /usr/bin/bl`
+
+ 3. Edit your sudoers file and append.
+
+    `user ALL=NOPASSWD: /usr/bin/bl`
+
+ 4. Bind your function keys by editing `~/.i3/config`
+
+    ```
+    # Screen Brightness
+    bindsym XF86MonBrightnessDown exec "sudo bl down" 
+    bindsym XF86MonBrightnessUp exec "sudo bl up"
+    ```
+
 
 ## Set Keyboard Layout
 
