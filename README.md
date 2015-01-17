@@ -31,6 +31,34 @@ For the latest drivers see: http://packages.ubuntu.com/
 
 ## Confirm Shutdown on Power Button
 
+ 1. Copy `scripts/shutdown-gui.py` to `~/.scripts/shutdown-gui.py`
+ 2. Make it executable
+
+    `chmod +x ~/.scripts/shutdown-gui.py`
+
+ 3. Bind the power button to shutdown-gui.py
+
+    ```
+    #~/.i3/config
+    # Power Button
+    bindsym XF86PowerOff exec "python ~/.scripts/shutdown-gui.py"
+    ```
+ 4. Stop acpi from interfering, replace contents of `/etc/acpi/powerbtn.sh` (TAKE A BACKUP FIRST!)
+
+    ```
+    #!/bin/sh
+    # /etc/acpi/powerbtn.sh
+    # Initiates a shutdown when the power putton has been
+    # pressed.
+
+    exit 0
+
+    ```
+
+ 5. Stop systemd from interfering, edit `/etc/systemd/logind.conf` (TAKE A BACKUP FIRST!)
+
+    `HandlePowerKey=ignore` 
+
 ## Keyboard Backlight
 
 Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro-keyboard-backlight-keys-on-ubuntu-gnulinux/)
