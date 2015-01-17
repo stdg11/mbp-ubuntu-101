@@ -42,7 +42,7 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
 
  3. Edit your sudoers file and append.
 
-    `warad337 ALL=NOPASSWD: /usr/bin/kb`
+    `user ALL=NOPASSWD: /usr/bin/kb`
 
  4. Bind your function keys by editing `~/.i3/config`
 
