@@ -21,17 +21,17 @@ To install the wireless drivers located in drivers/:
 
  1. Install DKMS
 
-    dkpg -i dkms_2.2.0.3-1.1ubuntu5_all.deb
+    `dkpg -i dkms_2.2.0.3-1.1ubuntu5_all.deb`
 
  2. Install Wireless Drivers
 
-    dkpg -i bcmwl-kernel-source_6.30.223.141+bdcom-0ubuntu2_amd64.deb
+    `dkpg -i bcmwl-kernel-source_6.30.223.141+bdcom-0ubuntu2_amd64.deb`
 
 For the latest drivers see: http://packages.ubuntu.com/
 
 ## Confirm Shutdown on Power Button
 
-# Keyboard Backlight
+## Keyboard Backlight
 
 Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro-keyboard-backlight-keys-on-ubuntu-gnulinux/)
 
