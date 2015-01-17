@@ -44,7 +44,15 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
 
     `warad337 ALL=NOPASSWD: /usr/bin/kb`
 
- 4. bindings
+ 4. Bind your function keys by editing `~/.i3/config`
+
+    ```
+    # keyboard brightness
+    bindsym XF86KbdBrightnessDown exec "sudo kb down"
+    bindsym XF86KbdBrightnessUp exec "sudo kb up"
+
+    ```
+
  5. To turn your backlight off on startup, add the following to your `~/.i3/config`
 
     `exec_always sudo kb off `
