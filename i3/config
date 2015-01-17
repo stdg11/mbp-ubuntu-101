@@ -42,7 +42,7 @@ bindsym $mod+d exec dmenu_run -fn "xft:Terminus:pixelsize=22" -nb '#191919' -nf 
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -54,7 +54,7 @@ bindsym $mod+Right focus right
 # move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
@@ -154,6 +154,14 @@ bindsym XF86KbdBrightnessUp exec "sudo kb up"
 bindsym XF86MonBrightnessDown exec "sudo bl down" 
 bindsym XF86MonBrightnessUp exec "sudo bl up"
 
+# Lock Screen
+bindsym XF86ScreenSaver exec "lock"
+bindsym XF86Sleep exec "lock"
+bindsym XF86Suspend exec "lock"
+bindsym $mod+l exec "lock"
+
+# Power Button
+bindcode 124 exec "python ~/.scripts/shutdown-gui.py"
 
 bar {
 	position bottom
@@ -175,4 +183,4 @@ bar {
 
 exec --no-startup-id feh --bg-scale '/home/warad337/Pictures/wallpaper/cubes-2560x1600.jpg'
 exec_always sudo kb off
- 
+exec_always xautolock -time 10 -locker lock
