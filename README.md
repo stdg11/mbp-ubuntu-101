@@ -49,6 +49,20 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
 
     `exec_always sudo kb off `
 
+## Set Keyboard Layout
+
+ 1. Add the following to your `~/.zshrc`
+
+    `setxkbmap us -variant colemak`
+
+ 2. To switch you can either create an alias or i3 $mod key command
+
+    ```
+    # ~/.zshrc
+    alias colemak="setxkbmap us -variant colemak"
+    alias qwerty="setxkbmap gb"
+    ```
+
 ## Wallpaper
 
  1. Install [FEH](http://feh.finalrewind.org/)

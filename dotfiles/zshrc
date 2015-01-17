@@ -79,6 +79,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export BROWSER="firefox"
+export EDITOR="vim"
+
 # set keybod to colemk
 setxkbmap us -variant colemak
 xbindkeys
@@ -89,5 +92,3 @@ alias zshconfig="vim ~/.zshrc"
 alias colemak="setxkbmap us -variant colemak"
 alias qwerty="setxkbmap gb"
 alias la="ls -la"
-alias kboff="sudo echo 0 > /sys/devices/platform/applesmc.768/leds/smc::kbd_backlight/brightness"
-alias kbon="sudo echo 100 > /sys/devices/platform/applesmc.768/leds/smc::kbd_backlight/brightness"
