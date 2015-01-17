@@ -43,13 +43,14 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
 
  1. Install [FEH](http://feh.finalrewind.org/)
     
-    sudo apt-get install feh 
+    `sudo apt-get install feh` 
  
 2. Run feh on startup to set the Wallpaper
     
+    ```
     vim ~/.i3/config
     exec --no-startup-id feh --bg-scale '/home/user/Pictures/wallpaper/cubes-2560x1600.jpg'
-exec_always ~/.scripts/kb-off.sh 
+    ```
 
 ## Installed Packages
 
