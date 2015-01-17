@@ -36,11 +36,13 @@ For the latest drivers see: http://packages.ubuntu.com/
 Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro-keyboard-backlight-keys-on-ubuntu-gnulinux/)
 
  1. Copy`scripts/kb` to `/usr/bin`
-
  2. Don't forget to make it executable
-    
      `sudo chmod +x /usr/bin/kb`
- 
+ 3. Edit your sudoers file and append.
+    `warad337 ALL=NOPASSWD: /usr/bin/kb`
+ 4. bindings
+ 5. To turn your backlight off on startup, add the following to your `~/.i3/config`
+    `exec_always sudo kb off `
 
 ## Wallpaper
 
