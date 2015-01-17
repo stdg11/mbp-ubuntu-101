@@ -2,9 +2,6 @@
 
 ## To Do
 
- - [x] Install Wireless drivers
- - [x] Keyboard Backlight
- - [x] Set keyboard layout on startup
  - [ ] Keyboard brightness 0 on startup
  - [ ] Confirm Shutdown on power button
  - [ ] Apple keyboard bindings
@@ -13,6 +10,9 @@
  - [ ] Auto install script
  - [ ] Make things pretty
  - [ ] zsh
+ - [x] Install Wireless drivers
+ - [x] Keyboard Backlight
+ - [x] Set keyboard layout on startup
 
 ## Install Broadcom Wireless Drivers
 
@@ -35,8 +35,11 @@ For the latest drivers see: http://packages.ubuntu.com/
 
 Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro-keyboard-backlight-keys-on-ubuntu-gnulinux/)
 
- 1. Copy `scripts/kb` to `/usr/bin`
- 2. Don't forget too `sudo chmod +x /usr/bin/kb`
+ 1. Copy`scripts/kb` to `/usr/bin`
+
+ 2. Don't forget to make it executable
+    
+     `sudo chmod +x /usr/bin/kb`
  
 
 ## Wallpaper
