@@ -146,13 +146,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# keyboard brightness
+# Keyboard Brightness
 bindsym XF86KbdBrightnessDown exec "sudo kb down"
 bindsym XF86KbdBrightnessUp exec "sudo kb up"
 
-#screen brightness
+# Screen Brightness
 bindsym XF86MonBrightnessDown exec "sudo bl down" 
 bindsym XF86MonBrightnessUp exec "sudo bl up"
+
+# Volume Control
+bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -- '-5%'
+bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -- '+5%'
+bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Lock Screen
 bindsym XF86ScreenSaver exec "lock"
@@ -161,7 +166,7 @@ bindsym XF86Suspend exec "lock"
 bindsym $mod+l exec "lock"
 
 # Power Button
-bindcode 124 exec "python ~/.scripts/shutdown-gui.py"
+bindsym XF86PowerOff exec "python ~/.scripts/shutdown-gui.py"
 
 bar {
 	position bottom
@@ -181,6 +186,11 @@ bar {
 	workspace_buttons no
 }
 
+# Set Wallpaper
 exec --no-startup-id feh --bg-scale '/home/warad337/Pictures/wallpaper/cubes-2560x1600.jpg'
+# Turn Keyboard backlight off
 exec_always sudo kb off
+# Autolock after 10 minutes
 exec_always xautolock -time 10 -locker lock
+# Shutdown dialog floating (find class by: xprop | grep WM_CLASS )
+for_window [class="Shutdown-gui.py"] floating enable

@@ -10,9 +10,13 @@
  - [ ] Auto install script
  - [ ] Make things pretty
  - [ ] zsh
+ - [ ] Screenshots OSX behaviour $mod+shift+3
  - [x] ~~Install Wireless drivers~~
  - [x] ~~Keyboard Backlight~~
  - [x] ~~Set keyboard layout on startup~~
+ - [ ] VPN integration OpenVPN
+ - [ ] Network Manager
+ - [ ] Fix Shutdown GUI
 
 ## Install Broadcom Wireless Drivers
 
@@ -145,6 +149,12 @@ Credit to [Fran Diéguez](http://www.frandieguez.com/blog/2010/06/24/macbook-pro
  4. To enable autolock add the following to `~/.i3/config`
 
     `exec_always xautolock -time 10 -locker lock`
+
+## Displays
+
+xrandr --output DP-1 --mode 1920x1080 --left-of eDP-1
+xrandr --output HDMI-1 --mode 2560x1080_60.00 --right-of eDP-1 --rotate left
+https://wiki.archlinux.org/index.php/xrandr
 
 ## Installed Packages
 
