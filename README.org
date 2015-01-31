@@ -1,0 +1,7 @@
+#+TITLE:  My Macbook Pro 10,1 Ubuntu 14.04 Dotfiles
+#+AUTHOR: Daniel Grammatica
+#+EMAIL:  dan@t0xic.me
+
+* TASKS
+** DONE Turn keyboard baclight off on startup
+** TODO Fix python shutdown gui script

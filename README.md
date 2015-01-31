@@ -6,7 +6,7 @@
  - [x] ~~Confirm Shutdown on power button~~
  - [x] ~~Apple keyboard bindings~~
  - [ ] Refind + Boot screen retina
- - [ ] Audio Mute
+ - [x] Audio Mute
  - [ ] Auto install script
  - [ ] Make things pretty
  - [ ] zsh
@@ -17,6 +17,7 @@
  - [ ] VPN integration OpenVPN
  - [ ] Network Manager
  - [ ] Fix Shutdown GUI
+ - [ ] Bind Media Keys to Spotify
 
 ## Install Broadcom Wireless Drivers
 
